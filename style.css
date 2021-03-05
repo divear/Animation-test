@@ -1,0 +1,61 @@
+body{
+  background-color: aliceblue;
+}
+.anim{
+    position:absolute;
+    left: 45%;
+    top: 45%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 20px;
+    animation:MoveAn 1s ease-in infinite alternate;
+    
+   
+
+
+}
+body:hover .anim{
+
+animation-play-state: paused;
+}
+
+@keyframes MoveAn{
+  0%{
+    background-color: red;
+    transform: translateX(0%);
+  }
+  25%{
+    transform: translateY(100%);
+
+  }
+  50%{
+    transform: translateY(100%) translateX(100%);
+  }
+  75%{
+    
+    transform:translateX(100%);
+  }
+  100%{
+    background-color: rgb(175, 77, 77);
+    transform:translateX(00%);
+  }
+
+
+}
+.rect{
+  position:absolute;
+  left: 75%;
+  top: 75%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 255, 191);
+  border: black 2px double;
+
+  
+}
+
+.Heading{
+font-size: 50px;
+
+}
